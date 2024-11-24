@@ -1,6 +1,6 @@
 # Cumulus Cloud Animation by Continuous Cellular Automata
 
-This project proposes a unique method of cumulus cloud animation using continuous cellular automata on a 3D scalar field of clouds with a focus on realistic formation and dissipation.
+This project proposes a unique method of cumulus cloud animation using continuous cellular automata on a 3D scalar field that represents clouds with a focus on realistic formation and dissipation.
 
 ## Description
 
@@ -43,23 +43,27 @@ For more in-depth information of the logistics, an academic report was created o
 ### Executing program
 
 * Select 'Particle System' under the hierarchy
-* Set a Size X, Y, and Z to control cloud bounding volume size
-* Set humidity
-* Set wind variables
-  * wind vector (X, Y, Z)
-  * minimum wind contribution
-* Set weights of rules
-  * sum weight
-  * random decay weight
-  * fixed porportional decay weight
-* (deprecated) Set perlin decay variables
-  * perlin decay weight
-  * perlin frequency
-  * perlin offset
-* (deprecated) Set overcrowding variables
-  * over crowded percentage
-  * over crowded decay weight
+* Adjust variables under 'Cloud Simulator' if wanted
 * Press the play button at the top and view visualization through the game window or scene window
+
+### Variables
+
+* Size X, Y, and Z : cloud bounding volume size
+* Humidity : minimum cell value
+* Sum variables
+  * Wind Vector X, Y, and Z : direction of wind
+  * minimum wind contribution : minimum percentage of cell's value contributed
+* Rule weight variables
+  * sum weight : multiplier for adjacency sum rule
+  * random decay weight : multiplier for random decay rule
+  * fixed porportional decay weight : multiplier for fixed porportional decay rule
+* (deprecated) Perlin Decay variables
+  * perlin frequency : frequency of perlin noise
+  * perlin offset : offset of perlin noise
+  * perlin decay weight : multiplier for perlin decay rule
+* (deprecated) Overcrowding variables
+  * overcrowded percentage : minimum humidity level to activate overcrowding rule
+  * overcrowded decay weight : multiplier for overcrowding decay rule
 
 ## Authors
 
